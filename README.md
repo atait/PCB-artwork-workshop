@@ -15,50 +15,63 @@ This example will use the NYCR logo. I found it by
 - drag-and-drop the logo to desktop
 - It is already in SVG format!
 
-You can repeat this process or use the checkpoint file included in the repo.
+You can repeat this process or use the checkpoint file included in the repo:
 
-> Checkpoint: NYCR-logo-horiz-original.svg
+> 💾 Checkpoint: NYCR-logo-phase-0-original.svg
+![inkscape-phase-0](images/inkscape-phase-0.png)
 
-## Preparing the artwork (single-layer import style)
-- In KiCad, File > Import > Graphics > Select the SVG file
+## Workflow 1: Single-layer direct import
+- In KiCad's `pcbnew` editor, create a new board. The file ends with `.kicad_pcb`.
+- File > Import > Graphics > Select the SVG file
+
 ![importing](images/importing.png)
+
 - Select the layer (F.Cu, F.Mask, etc.) and scale
 - Move it around *and rescale*
 
+> 💾 Checkpoint: NYCresistor-card-example1.kicad_pcb
+![kicad-example1](images/kicad-example1.png)
 
-## Preparing the artwork (multi-layer footprint style)
+
+## Workflow 2: Multi-layer footprint
 ### Pre-processing groups/layers in Inkscape
 - Open NYCR logo in Inkscape
 - Ungroup elements until letters are separate
 - Regroup elements based on which letters go together
-- Create layers (F.Cu, F.Mask, etc.)
 - Scale everything to desired size to fit on the board. You will not be abe to rescale after exporting the footprint.
+- Create layers (F.Cu, F.Mask, etc.)
 
-> Checkpoint: NYCR-logo-2.svg
+> 💾 Checkpoint: NYCR-logo-phase-1.svg
+![inkscape-phase-1](images/inkscape-phase-1.png)
+
+Notice it *looks* the same so far, but now we have layers and more reasonable groupings.
 
 ### Editing steps
 These are specific to the NYCR logo. You will need to adapt them to your own graphics.
 
 Step 1: **NYC**: Single-layer silk screen
 - Move "NYC" to `F.Silk` layer (Select elements, right click, Move to Layer...)
+- Color the layer something (I used pink)
 
 Step 2: **RESISTOR**: Metal multilayer
 - Move "RESISTOR" to `F.Mask` layer.
-- Then *duplicate* and move to `F.Cu` layer.
-- Change the color of the duplicate
-- (optional, preferred) *outset* it to make it visible. (It is ok if the lines are not straight.)
+- Color the layer something (I used brown)
+- Then *duplicate* and move to `F.Cu` layer (make it orange)
+- (optional, preferred) *outset* it to make it visible. (It is ok if the lines are not quite straight.)
 
 Step 3: **Graphic**: Putting it together
-- If it is a hole, use Shift-Ctrl-K to break path. Then deselect the outer circle.
-- Silkscreeen in the middle. Duplicate and move to `F.Cu` layer.
+- Use Stroke to Path for the resistor itself
+- Move it to `F.Silk` layer.
+- Duplicate and move to `F.Cu` layer.
 - Change the color of the duplicate
 - (optional, preferred) *outset* it to make it visible.
-- Use *subtraction* and *rescale* operations to put annuli on `F.Cu` and `F.Mask` layers.
+- With the outer circle, use your imagination. I used *subtraction* and *rescale* operations to put annuli on `F.Cu` and `F.Mask` layers.
 
-> Checkpoint: NYCR-logo-5.svg
+> 💾 Checkpoint: NYCR-logo-phase-2.svg
+![inkscape-phase-2](images/inkscape-phase-2.png)
 
 ### Convert SVG to KiCad module
-- Download svg2mod
+- Download `svg2mod`
 ```
 pip install svg2mod
 ```
@@ -69,11 +82,11 @@ pip install svg2mod
 svg2mod -p 1.0 -o nycr-logo.pretty/NYCR-logo.kicad_mod nycr_logo.svg
 ```
 
-If precision is too low, it will look jagged. Decrease the precision value (e.g., `-p 0.2`) to get a smoother curve.
+If precision is too low, it will look jagged. Decrease the precision value (e.g., `-p 0.2`) to get a smoother curve. The lower this number, the larger the file size.
 
 ![low precision](images/precision.png)
 
-> Checkpoint: NYCR-logo.kicad_mod
+> 💾 Checkpoint: NYCR-logo.kicad_mod
 
 ### Import module into KiCad footprint manager
 Edit footprint libraries: add nycr-logo.pretty
@@ -114,10 +127,17 @@ Don't import the module, just copy it to the library folder. -->
 
 You can pick different dimensions. You can even use a circle. It's up to you. I recommend staying smaller than a credit card if you want to carry it around.
 
-### Review in 3D viewer
-- Practice moving the camera, play with raytracing, change board soldermask display color, etc.
+- ! Try flipping the footprint with "F" key. This is not possible with the direct import method.
 
+> 💾 Checkpoint: NYCresistor-card-example2.kicad_pcb
+![kicad-example2](images/kicad-example2.png)
+
+
+### Preview in 3D viewer
 ![3d viewer menu](images/3d%20viewer%20menu.png)
+
+- Practice moving the camera, play with raytracing, change board soldermask display color, etc.
+- To change soldermask display color, go to File > Board Setup... > Physical Stackup
 
 ![3d view](images/3d%20viewer.png)
 
