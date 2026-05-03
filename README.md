@@ -28,6 +28,14 @@ Use google images and filter for Tools > Type > Line drawing.
 Also try searching for "vector" "graphics" or "clip art".
 ![filter for svg googliemages](images/filter%20for%20svg%20googliemages.png)
 
+## Layers of PCB that creates various colours:
+Diagram here: https://drive.google.com/file/d/1ANhQneMfqI__9NHfdra-yLE6yxaQsmoo/view?usp=sharing
+
+You can choose between gold, light, dark and white.
+
+Gold goes with the mask. White goes NOT with the mask.
+
+
 ## Workflow 1: Single-layer direct import
 - In KiCad's `pcbnew` editor, create a new board. The file ends with `.kicad_pcb`.
 - File > Import > Graphics > Select the SVG file
