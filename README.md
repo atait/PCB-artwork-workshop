@@ -1,13 +1,16 @@
 ## Overview
 This workshop will walk you through creating PCB artwork using Inkscape and KiCad.
 
-There are two workflows:
+There are three workflows:
 1. Single-layer import style
 2. Multi-layer footprint style
+3. Placing a footprint from a library
 
-The second workflow is not easy. These instructions trace the detailed procedure for the NYCR logo example. If you get stuck, checkpoint files are provided. That means you can skip steps and practice the techniques one step at a time.
+These instructions trace the detailed procedure for the NYCR logo example. If you get stuck, checkpoint files are provided. That means you can skip steps and practice the techniques one step at a time.
 
 When you repeat the procedure for your own graphics, you will not be able to skip steps.
+
+This README contains the instructions for the three workflows. See the [Outline.md](Outline.md) file for the workshop outline.
 
 ## Obtain an SVG file
 This example will use the NYCR logo. I found it by
