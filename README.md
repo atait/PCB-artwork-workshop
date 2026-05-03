@@ -20,6 +20,11 @@ You can repeat this process or use the checkpoint file included in the repo:
 > 💾 Checkpoint: NYCR-logo-phase-0-original.svg
 ![inkscape-phase-0](images/inkscape-phase-0.png)
 
+### To find your own SVG
+Use google images and filter for Tools > Type > Line drawing.
+Also try searching for "vector" "graphics" or "clip art".
+![filter for svg googliemages](images/filter%20for%20svg%20googliemages.png)
+
 ## Workflow 1: Single-layer direct import
 - In KiCad's `pcbnew` editor, create a new board. The file ends with `.kicad_pcb`.
 - File > Import > Graphics > Select the SVG file
@@ -39,7 +44,7 @@ You can repeat this process or use the checkpoint file included in the repo:
 - Ungroup elements until letters are separate
 - Regroup elements based on which letters go together
 - Scale everything to desired size to fit on the board. You will not be abe to rescale after exporting the footprint.
-- Create layers (F.Cu, F.Mask, etc.)
+- Create layers (F.Cu, F.Mask, F.SilkS)
 
 > 💾 Checkpoint: NYCR-logo-phase-1.svg
 ![inkscape-phase-1](images/inkscape-phase-1.png)
@@ -69,6 +74,8 @@ Step 3: **Graphic**: Putting it together
 
 > 💾 Checkpoint: NYCR-logo-phase-2.svg
 ![inkscape-phase-2](images/inkscape-phase-2.png)
+
+## Workflow 3: From footprint to gerbers
 
 ### Convert SVG to KiCad module
 - Download `svg2mod`
@@ -117,8 +124,6 @@ Don't import the module, just copy it to the library folder. -->
 
 ![adding footprint](images/place%20footprint.png)
 
-## Kicad: from footprint to gerbers
-
 ### Make the board outline
 - In Kicad, select the outline layer (Edge.Cuts)
 - Select the rectangle tool
@@ -152,16 +157,6 @@ You can pick different dimensions. You can even use a circle. It's up to you. I 
 - Zip the gerber directory
 
 ![tapeout compress](images/tapeout%20compress.png)
-
-## Your turn: BYO graphics
-- Obtain your own design
-- Edit it!
-- Follow the instructions above
-    - Start with single layer import
-    - Then do the whole Inkscape and svg2mod process
-- Put it in the `nycr-logo.pretty` folder so you don't have to repeat adding library steps
-- Place the footprint on the board
-- You can delete the NYCR logo if you want
 
 
 ## Instructions for ordering
