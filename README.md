@@ -95,6 +95,7 @@ pip install svg2mod
 ```
 [svg2mod Documentation](https://pypi.org/project/svg2mod/)
 
+- Create a folder inside your wanted kicad folder called "somename".pretty. It has to be in the kicad folder for kicad to find it
 - Convert to kicad module
 ```
 svg2mod -p 1.0 -o nycr-logo.pretty/NYCR-logo.kicad_mod nycr_logo.svg
@@ -171,7 +172,7 @@ You can pick different dimensions. You can even use a circle. It's up to you. I 
 
 
 ## Instructions for ordering
-### OSHPARK
+### OSHPARK (american)
 - multiples of 3
 - About $7 per board
 
@@ -184,7 +185,7 @@ You can pick different dimensions. You can even use a circle. It's up to you. I 
 7. Wait for delivery
 8. Enjoy your new PCBs!
 
-### JLCPCB
+### JLCPCB (international - pay tariffs)
 This is cheaper, faster, with more options (color, thickness, etc.). It also scales better for larger quantities (~70¢ per board @ 50 boards). Most of the cost is in tariffs and shipping, so we are going to prefer OSHPARK for prototyping.
 
 If you want to do a more advanced production run, see the slides for JLCPCB instructions, but I recommend starting with prototyping.
