@@ -35,6 +35,17 @@ You can choose between gold, light, dark and white.
 
 Gold goes with the mask. White goes NOT with the mask.
 
+We will be naming the layers based on where they are going. So first we name F. (for the front) and then the ending is where that area is going (Cu, SilkS, or Mask). 
+
+Examples:
+ - F.Cu
+ - B.Cu
+ - F.Mask
+ - B.Mask
+ - F.SilkS
+ - B.SilkS
+
+
 
 ## Workflow 1: Single-layer direct import
 - In KiCad's `pcbnew` editor, create a new board. The file ends with `.kicad_pcb`.
