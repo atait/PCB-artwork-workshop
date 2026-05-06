@@ -58,7 +58,7 @@ Notice it *looks* the same so far, but now we have layers and more reasonable gr
 These are specific to the NYCR logo. You will need to adapt them to your own graphics.
 
 Step 1: **NYC**: Single-layer silk screen
-- Move "NYC" to `F.Silk` layer (Select elements, right click, Move to Layer...)
+- Move "NYC" to `F.SilkS` layer (Select elements, right click, Move to Layer...)
 - Color the layer something (I used pink)
 
 Step 2: **RESISTOR**: Metal multilayer
@@ -69,7 +69,7 @@ Step 2: **RESISTOR**: Metal multilayer
 
 Step 3: **Graphic**: Putting it together
 - Use Stroke to Path for the resistor itself
-- Move it to `F.Silk` layer.
+- Move it to `F.SilkS` layer.
 - Duplicate and move to `F.Cu` layer.
 - Change the color of the duplicate
 - (optional, preferred) *outset* it to make it visible.
