@@ -218,3 +218,5 @@ If you want to do a more advanced production run, see the slides for JLCPCB inst
 
 ## After you get your board:
 It may have spiky edges or burrs on the board from the machines that cut them out. You can file these off with a metal file but make sure to have the board be wet when you are doing this as the filing will great fiberglass dust and you don't want that to go into your lungs or skin. 
+
+![Boards with and without burrs](images/bur.png)
