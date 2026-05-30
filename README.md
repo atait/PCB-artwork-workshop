@@ -53,11 +53,11 @@ That means 4 distinct appearances, covered in this table.
 
 | Appearance on board  | Appearance on kicad render | Physical stackup              | SVG layers                |
 | -------------------- | -------------------------- | ----------------------------- | ------------------------- |
-| Tan or brown                | Brown            | FR4                           | F.Mask                    |
-| Green or purple                 | Green                      | FR4 + soldermask              | None or F.Cu alone                     |
-| Silver or gold          | Yellow                     | FR4 + copper                  | F.Cu + F.Mask             |
+| Tan or brown         | Brown                      | FR4                           | F.Mask                    |
+| Green or purple      | Green                      | FR4 + soldermask              | None or F.Cu alone        |
+| Silver or gold       | Yellow                     | FR4 + copper                  | F.Cu + F.Mask             |
 | White                | White                      | FR4 + soldermask + silkscreen | F.SilkS                   |
-| Invalid | Invisible | FR4 + silkscreen (silkscreen needs soldermask to stick) | F.SilkS + F.Mask |
+| Invalid              | Invisible                  | FR4 + silkscreen (silkscreen needs soldermask to stick) | F.SilkS + F.Mask |
 
 Gold goes with the mask layer. White goes NOT with the mask layer.
 
