@@ -51,14 +51,13 @@ Edge.Cuts is a separate mechanical layer for board outlines and cutouts. It does
 
 That means 4 distinct visual appearances, covered in this table. FR4 is the base fiberglass material of the PCB.
 
-| Appearance      | Physical stackup                         | SVG layers                |
-| --------------- | ---------------------------------------- | ------------------------- |
-| Light tan/brown | FR4                                      | F.Mask                    |
-| Purple          | FR4 (+ copper) + soldermask              | None (+ F.Cu)             |
-| Silver/gold     | FR4 + copper                             | F.Cu + F.Mask             |
-| White           | FR4 (+ copper) + soldermask + silkscreen | F.SilkS (+ F.Cu)          |
-| Invalid         |                                          | F.SilkS + F.Mask (+ F.Cu) |
-| Cutouts/holes   | Board cutouts and slots                  | Edge.Cuts                 |
+| Appearance on board  | Appearance on kicad render | Physical stackup              | SVG layers                |
+| -------------------- | -------------------------- | ----------------------------- | ------------------------- |
+| Tan or brown         | Brown                      | FR4                           | F.Mask                    |
+| Green or purple      | Green                      | FR4 + soldermask              | None or F.Cu alone        |
+| Silver or gold       | Yellow                     | FR4 + copper                  | F.Cu + F.Mask             |
+| White                | White                      | FR4 + soldermask + silkscreen | F.SilkS                   |
+| Invalid              | Invisible                  | FR4 + silkscreen (silkscreen needs soldermask to stick) | F.SilkS + F.Mask |
 
 
 ## Workflow 1: Single-layer direct import
