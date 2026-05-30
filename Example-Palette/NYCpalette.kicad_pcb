@@ -56,7 +56,11 @@
 		(capping no)
 		(filling no)
 		(pcbplotparams
+<<<<<<< HEAD
 			(layerselection 0x00000000_00000000_55555555_575555ff)
+=======
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+>>>>>>> d3a7335 (corrected spelling)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -89,6 +93,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
+<<<<<<< HEAD
 			(outputdirectory "NYCpalette-tapeout")
 		)
 	)
@@ -821,12 +826,26 @@
 		(uuid "c423a2e8-9076-4136-a590-3f30bfd2054a")
 		(at 94.488 53.34)
 		(descr "Converted using: svg2mod -p 1.0 -o Example-Palette/workshop-palette.pretty/palette.kicad_mod 'Example-Palette/SVG editing/PCB-palette.svg'")
+=======
+			(outputdirectory "nycr-test1-tapeout")
+		)
+	)
+	(footprint "workshop-palette:palette"
+		(layer "F.Cu")
+		(uuid "8e3b4832-0d5c-4765-8695-c338fd87378d")
+		(at 93.98 53.34)
+		(descr "Converted using: svg2mod -p 1.0 -o workshop-palette.pretty/palette.kicad_mod 'SVG editing/PCB-palette.svg'")
+>>>>>>> d3a7335 (corrected spelling)
 		(tags "svg2mod")
 		(property "Reference" "svg2mod"
 			(at 0 -3.048 0)
 			(layer "F.SilkS")
 			(hide yes)
+<<<<<<< HEAD
 			(uuid "86365337-8f46-4883-a59a-637b25666e5f")
+=======
+			(uuid "be54ddc3-84f5-443f-a08d-d1cd746cab2c")
+>>>>>>> d3a7335 (corrected spelling)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -838,7 +857,11 @@
 			(at 0 48.548584 0)
 			(layer "F.SilkS")
 			(hide yes)
+<<<<<<< HEAD
 			(uuid "ca43dc52-cb83-4949-837b-a4e1673f781e")
+=======
+			(uuid "40d5f276-4589-4993-948b-de764e37680a")
+>>>>>>> d3a7335 (corrected spelling)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -850,7 +873,11 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
+<<<<<<< HEAD
 			(uuid "fa9e74da-a92e-4f10-becc-25c63ab474bb")
+=======
+			(uuid "e0b18bda-f6a1-40cf-98d8-1927a7f0a3a0")
+>>>>>>> d3a7335 (corrected spelling)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -861,7 +888,11 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
+<<<<<<< HEAD
 			(uuid "b854c393-1b38-4d26-b1fe-35115700e413")
+=======
+			(uuid "5db55118-1f9f-40a0-b0d5-ae7652a832ee")
+>>>>>>> d3a7335 (corrected spelling)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -880,7 +911,11 @@
 			)
 			(fill yes)
 			(layer "F.Cu")
+<<<<<<< HEAD
 			(uuid "cafe3e12-5a01-4a92-bec2-72e2d3df46ef")
+=======
+			(uuid "fec6da72-29f3-4e79-a0e5-9607ec7d5b6d")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -893,7 +928,11 @@
 			)
 			(fill yes)
 			(layer "F.Cu")
+<<<<<<< HEAD
 			(uuid "1da12b57-8431-4680-9ff5-5e1fe2d901d4")
+=======
+			(uuid "a47ea4f0-1fc8-4fc9-9655-ae4c7390083f")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -905,7 +944,11 @@
 			)
 			(fill yes)
 			(layer "F.Cu")
+<<<<<<< HEAD
 			(uuid "5c7bb9c5-c00f-4949-a658-9cfb76f61042")
+=======
+			(uuid "0b875824-e613-41c8-99f7-081d6dae60b6")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -918,7 +961,11 @@
 			)
 			(fill yes)
 			(layer "F.Cu")
+<<<<<<< HEAD
 			(uuid "7d319cdf-8a60-46f7-9b6a-0b9eec5bc31d")
+=======
+			(uuid "981111e4-dbb1-4ad0-98b4-2191c08fe887")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -931,7 +978,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "52b1f187-7d13-4f14-af41-aa77f1e524be")
+=======
+			(uuid "af18fe2a-12a2-4da2-a5f1-ed01730b3902")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -944,7 +995,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "656c3329-b76c-4599-bd6c-b536ee5f5631")
+=======
+			(uuid "63a679fd-a4ef-43ab-b414-10119d0ccb14")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -957,7 +1012,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "22c51d5e-0c66-4ad1-b84c-989ae3aecbe8")
+=======
+			(uuid "26997832-bbe9-416f-a02f-2c85596c9db9")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -970,7 +1029,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "c175dbae-1236-4026-8495-406f74575796")
+=======
+			(uuid "d22698fe-5afa-4de7-bc73-a84dda041288")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -983,7 +1046,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "e90aea30-5f67-4fb3-add5-90234976817e")
+=======
+			(uuid "ad995260-83e1-485d-bab5-bf3eac8c7514")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -996,7 +1063,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "032409c8-3ce9-4c65-9006-04b5b66c49a0")
+=======
+			(uuid "c5331b3c-7ae7-4e03-bcbe-fad509c5cf9e")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -1009,7 +1080,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "00462abf-e38d-4960-9cdd-d48276e3199b")
+=======
+			(uuid "fa699b28-2972-4c64-965a-b73fdb8f4846")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -1022,7 +1097,11 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
+<<<<<<< HEAD
 			(uuid "21758990-5c28-4f3e-8146-21f14b2f9129")
+=======
+			(uuid "70b048f7-6679-4ce0-9703-2cfc5145970d")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -1034,7 +1113,11 @@
 			)
 			(fill yes)
 			(layer "B.Cu")
+<<<<<<< HEAD
 			(uuid "72d82dc3-46de-4a95-8b2c-b5f89bda86e9")
+=======
+			(uuid "52d5d644-4e8a-440d-aebb-eae561dde6b7")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -1047,7 +1130,11 @@
 			)
 			(fill yes)
 			(layer "B.Mask")
+<<<<<<< HEAD
 			(uuid "67cfda23-401d-4cd3-aba3-66f4c9d4b68d")
+=======
+			(uuid "24bf4c18-754e-4e63-ade2-c2d164787b2d")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -1060,6 +1147,7 @@
 			)
 			(fill yes)
 			(layer "B.Mask")
+<<<<<<< HEAD
 			(uuid "8f06eac7-cdae-406e-9412-e81b89a62992")
 		)
 		(fp_poly
@@ -1071,6 +1159,20 @@
 				(xy 11.750187 10.999845) (xy 11.750187 1.75028) (xy 21.001302 1.75028) (xy 21.001302 10.999845)
 				(xy 21.001302 21.750095) (xy 21.750094 21.750095) (xy 21.750094 21.375441) (xy 21.750094 0.999938)
 				(xy 1.000456 0.999938)
+=======
+			(uuid "a74363bd-2fca-4661-b620-6ca3fe7073e5")
+		)
+		(fp_poly
+			(pts
+				(xy 1.000456 0.999939) (xy 1.000456 21.750093) (xy 11.000362 21.750093) (xy 11.000362 10.999845)
+				(xy 1.750281 10.999845) (xy 1.750281 1.750281) (xy 11.000362 1.750281) (xy 11.000362 10.999845)
+				(xy 11.000362 21.750093) (xy 11.000362 20.999751) (xy 1.750281 20.999751) (xy 1.750281 11.750187)
+				(xy 11.000362 11.750187) (xy 11.000362 20.999751) (xy 11.000362 21.750093) (xy 21.001302 21.750093)
+				(xy 21.001302 10.999845) (xy 11.750187 10.999845) (xy 11.750187 1.750281) (xy 21.001302 1.750281)
+				(xy 21.001302 10.999845) (xy 21.001302 21.750093) (xy 21.001302 20.999751) (xy 11.750187 20.999751)
+				(xy 11.750187 11.750187) (xy 21.001302 11.750187) (xy 21.001302 20.999751) (xy 21.001302 21.750093)
+				(xy 21.750094 21.750093) (xy 21.750094 21.375439) (xy 21.750094 0.999939) (xy 1.000456 0.999939)
+>>>>>>> d3a7335 (corrected spelling)
 			)
 			(stroke
 				(width 0)
@@ -1078,7 +1180,11 @@
 			)
 			(fill yes)
 			(layer "F.SilkS")
+<<<<<<< HEAD
 			(uuid "9177d23a-bd34-4c98-b092-7f83f18af4bb")
+=======
+			(uuid "9f6030bf-e351-4cdd-a5f7-6a6680a20b8b")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -1087,8 +1193,14 @@
 				(xy 11.000362 44.500456) (xy 11.000362 43.750114) (xy 1.750281 43.750114) (xy 1.750281 34.500549)
 				(xy 11.000362 34.500549) (xy 11.000362 43.750114) (xy 11.000362 44.500456) (xy 21.001302 44.500456)
 				(xy 21.001302 33.750207) (xy 11.750187 33.750207) (xy 11.750187 24.500641) (xy 21.001302 24.500641)
+<<<<<<< HEAD
 				(xy 21.001302 33.750207) (xy 21.001302 44.500456) (xy 21.750094 44.500456) (xy 21.750094 44.125802)
 				(xy 21.750094 23.7503) (xy 1.000456 23.7503)
+=======
+				(xy 21.001302 33.750207) (xy 21.001302 44.500456) (xy 21.001302 43.750114) (xy 11.750187 43.750114)
+				(xy 11.750187 34.500549) (xy 21.001302 34.500549) (xy 21.001302 43.750114) (xy 21.001302 44.500456)
+				(xy 21.750094 44.500456) (xy 21.750094 44.125802) (xy 21.750094 23.7503) (xy 1.000456 23.7503)
+>>>>>>> d3a7335 (corrected spelling)
 			)
 			(stroke
 				(width 0)
@@ -1096,6 +1208,7 @@
 			)
 			(fill yes)
 			(layer "F.SilkS")
+<<<<<<< HEAD
 			(uuid "580d529a-2b59-4e9d-888f-f6567cc8603f")
 		)
 		(fp_poly
@@ -1125,6 +1238,20 @@
 				(xy 43.751662 10.999845) (xy 34.500548 10.999845) (xy 34.500548 1.75028) (xy 43.751662 1.75028)
 				(xy 43.751662 10.999845) (xy 43.751662 21.750094) (xy 44.500453 21.750094) (xy 44.500453 21.37544)
 				(xy 44.500453 0.999938) (xy 23.750816 0.999938)
+=======
+			(uuid "e24bd5f6-fb80-447c-ae64-ab390826368b")
+		)
+		(fp_poly
+			(pts
+				(xy 23.750816 0.999939) (xy 23.750816 21.750094) (xy 33.750723 21.750094) (xy 33.750723 10.999846)
+				(xy 24.500641 10.999846) (xy 24.500641 1.750281) (xy 33.750723 1.750281) (xy 33.750723 10.999846)
+				(xy 33.750723 21.750094) (xy 33.750723 20.999752) (xy 24.500641 20.999752) (xy 24.500641 11.750187)
+				(xy 33.750723 11.750187) (xy 33.750723 20.999752) (xy 33.750723 21.750094) (xy 43.751662 21.750094)
+				(xy 43.751662 10.999846) (xy 34.500548 10.999846) (xy 34.500548 1.750281) (xy 43.751662 1.750281)
+				(xy 43.751662 10.999846) (xy 43.751662 21.750094) (xy 43.751662 20.999752) (xy 34.500548 20.999752)
+				(xy 34.500548 11.750187) (xy 43.751662 11.750187) (xy 43.751662 20.999752) (xy 43.751662 21.750094)
+				(xy 44.500453 21.750094) (xy 44.500453 21.37544) (xy 44.500453 0.999939) (xy 23.750816 0.999939)
+>>>>>>> d3a7335 (corrected spelling)
 			)
 			(stroke
 				(width 0)
@@ -1132,18 +1259,34 @@
 			)
 			(fill yes)
 			(layer "F.SilkS")
+<<<<<<< HEAD
 			(uuid "f83e7f08-b9b7-4e85-9fc4-ea8dbf1b6fda")
 		)
 		(fp_poly
 			(pts
 				(xy 26.024637 30.817647) (xy 26.024637 30.210395) (xy 25.714549 30.210395) (xy 25.404461 30.210395)
 				(xy 25.404461 30.817647) (xy 25.404461 31.4249) (xy 25.714549 31.4249) (xy 26.024637 31.4249) (xy 26.024637 30.817647)
+=======
+			(uuid "ccb3d199-6b16-42dc-87db-5b3c3155dd80")
+		)
+		(fp_poly
+			(pts
+				(xy 23.750816 23.7503) (xy 23.750816 44.500456) (xy 33.750723 44.500456) (xy 33.750723 43.750114)
+				(xy 24.500641 43.750114) (xy 24.500641 34.500549) (xy 33.750723 34.500549) (xy 33.750723 33.750207)
+				(xy 24.500641 33.750207) (xy 24.500641 24.500642) (xy 33.750723 24.500642) (xy 33.750723 33.750207)
+				(xy 33.750723 34.500549) (xy 33.750723 43.750114) (xy 33.750723 44.500456) (xy 43.751662 44.500456)
+				(xy 43.751662 33.750207) (xy 34.500548 33.750207) (xy 34.500548 24.500642) (xy 43.751662 24.500642)
+				(xy 43.751662 33.750207) (xy 43.751662 44.500456) (xy 43.751662 43.750114) (xy 34.500548 43.750114)
+				(xy 34.500548 34.500549) (xy 43.751662 34.500549) (xy 43.751662 43.750114) (xy 43.751662 44.500456)
+				(xy 44.500453 44.500456) (xy 44.500453 44.125802) (xy 44.500453 23.7503) (xy 23.750816 23.7503)
+>>>>>>> d3a7335 (corrected spelling)
 			)
 			(stroke
 				(width 0)
 				(type solid)
 			)
 			(fill yes)
+<<<<<<< HEAD
 			(layer "B.SilkS")
 			(uuid "8b304d77-3d55-4070-8fc7-0b45f26cd128")
 		)
@@ -1359,6 +1502,10 @@
 			(fill yes)
 			(layer "B.SilkS")
 			(uuid "09b2f263-f54a-499a-b1a4-ceeb449d66f2")
+=======
+			(layer "F.SilkS")
+			(uuid "f2cf57b8-1443-4d6d-a5d8-3d18f10714c9")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(fp_poly
 			(pts
@@ -1378,6 +1525,7 @@
 			)
 			(fill yes)
 			(layer "B.SilkS")
+<<<<<<< HEAD
 			(uuid "ff060920-9e0c-4579-a49a-a1a2e77a532f")
 		)
 		(fp_poly
@@ -1653,6 +1801,9 @@
 			(fill yes)
 			(layer "B.SilkS")
 			(uuid "24e2a40a-bbe9-402c-8d48-bdc4b6487e7f")
+=======
+			(uuid "b41a009b-37c2-4e8b-a498-b8e9adf0b2af")
+>>>>>>> d3a7335 (corrected spelling)
 		)
 		(embedded_fonts no)
 	)
@@ -1740,6 +1891,7 @@
 		(layer "Edge.Cuts")
 		(uuid "f2992412-3a5d-4cae-915d-c1dff9e2308e")
 	)
+<<<<<<< HEAD
 	(gr_text "Palette-v1\nA. Tait\n5/26"
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1904,5 +2056,7 @@
 			(justify right bottom mirror)
 		)
 	)
+=======
+>>>>>>> d3a7335 (corrected spelling)
 	(embedded_fonts no)
 )
