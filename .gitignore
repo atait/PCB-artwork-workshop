@@ -1,5 +1,6 @@
 DragonPanther-alias
 ~$*.pptx
+~*.lck
 .DS_Store
 *.zip
 
