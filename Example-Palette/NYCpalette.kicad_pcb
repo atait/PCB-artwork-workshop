@@ -1741,7 +1741,11 @@
 		(uuid "f2992412-3a5d-4cae-915d-c1dff9e2308e")
 	)
 	(gr_text "Palette-v1\nA. Tait\n5/26"
+<<<<<<< HEAD
 		(at 75.184 96.012 0)
+=======
+		(at 77.724 102.108 0)
+>>>>>>> 420d593 (Updated palette with silkS and labels and QR code)
 		(layer "F.SilkS")
 		(uuid "3024f7d4-7b70-43b5-9994-d0cbadcdf2cd")
 		(effects
