@@ -41,10 +41,13 @@ All possible layers:
  - B.Mask
  - F.SilkS
  - B.SilkS
+ - Edge.Cuts (board cutouts - can be technical and expressive, not just outlines)
 
 There are 3 design layers per side (F.Cu, F.Mask, and F.SilkS). That means 8 possible permutations of them—think of it like 8 corners on a cube.
 - 2 of those permutations are invalid because silkscreen needs soldermask to stick
 - 2 of those permutations are visually redundant because soldermask hides the copper underneath
+
+Edge.Cuts is a separate mechanical layer for board outlines and cutouts. It doesn't participate in the visual layer permutations but can be used creatively for internal cutouts, slots, and expressive board shapes.
 
 That means 4 distinct appearances, covered in this table.
 
@@ -200,6 +203,20 @@ You can pick different dimensions. You can even use a circle. It's up to you. I 
 
 ![tapeout compress](images/tapeout%20compress.png)
 
+## Iterating on the design
+
+If you want to make changes to your artwork after creating the footprint:
+
+1. Make changes in Inkscape
+2. Save the SVG file
+3. Run the svg2mod command again. Make sure the output path is pointing to the live library:
+   ```
+   svg2mod -p 1.0 -o nycr-logo.pretty/NYCR-logo.kicad_mod nycr_logo.svg
+   ```
+4. Quit and reopen `pcbnew.app` (KiCad needs to reload the library)
+5. Add component (hotkey: `A`), find your library, and place the updated footprint
+6. 3D view (hotkey: `Opt-3`) will show you how it looks in real life.
+7. Review the 3D model and make further adjustments in Inkscape
 
 ## Instructions for ordering
 ### OSHPARK (United States)
