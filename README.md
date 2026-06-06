@@ -30,9 +30,9 @@ Also try searching for "vector" "graphics" or "clip art".
 
 ## Layers of PCB that creates various appearances:
 
-You can choose between gold, light, dark and white.
+PCBs will either be purple or green depending on how you order them. FR4 is the base fiberglass material of the PCB. You can choose between 4 different colors to make your art: gold, light (tan or brownish), dark (green or purple), and white.
 
-We will be naming the layers based on where they are going. So first we name F. (for the front) and then the ending is where that area is going (Cu, SilkS, or Mask).
+Layers are named based on side of board and material the shapes represent. So first we name F (for the front of the board) and then the ending is where that area is going (Cu, SilkS, or Mask). B is for Back.
 
 All possible layers:
  - F.Cu
@@ -49,7 +49,7 @@ There are 3 design layers per side (F.Cu, F.Mask, and F.SilkS). That means 8 pos
 
 Edge.Cuts is a separate mechanical layer for board outlines and cutouts. It doesn't participate in the visual layer permutations but can be used creatively for internal cutouts, slots, and expressive board shapes.
 
-That means 4 distinct visual appearances, covered in this table. FR4 is the base fiberglass material of the PCB.
+That means 4 distinct appearances, covered in this table.
 
 | Appearance on board  | Appearance on kicad render | Physical stackup              | SVG layers                |
 | -------------------- | -------------------------- | ----------------------------- | ------------------------- |
@@ -59,6 +59,15 @@ That means 4 distinct visual appearances, covered in this table. FR4 is the base
 | White                | White                      | FR4 + soldermask + silkscreen | F.SilkS                   |
 | Invalid              | Invisible                  | FR4 + silkscreen (silkscreen needs soldermask to stick) | F.SilkS + F.Mask |
 
+Gold goes with the mask layer. White goes NOT with the mask layer.
+
+Example 3D kicad render:
+![Kicad render](images/simple-kicad-render.png)
+
+### Translucency
+While there are four primary appearances, it is possible to modify them slightly. For example, putting B.Mask and F.Mask together creates a translucent brown effect (light shines through the board); putting B.Cu and F.Mask together creates an opaque brown effect.
+
+Having F.Cu on its own results in copper beneath the soldermask, which is very slightly lighter than having dark soldermask without copper (no layers). The table puts both in the same row.
 
 ## Workflow 1: Single-layer direct import
 - In KiCad's `pcbnew` editor, create a new board. The file ends with `.kicad_pcb`.
@@ -227,3 +236,8 @@ If you want to make changes to your artwork after creating the footprint:
 This is cheaper, faster, with more options (color, thickness, etc.). It also scales better for larger quantities (~70¢ per board @ 50 boards). Most of the cost is in tariffs and shipping, so we are going to prefer OSHPARK for prototyping.
 
 If you want to do a more advanced production run, see the slides for JLCPCB instructions, but I recommend starting with prototyping.
+
+## After you get your board:
+It may have spiky edges or burrs on the board from the machines that cut them out. You can file these off with a metal file but make sure to have the board be wet when you are doing this as the filing will great fiberglass dust and you don't want that to go into your lungs or skin.
+
+![Boards with and without burrs](images/bur.jpg)
