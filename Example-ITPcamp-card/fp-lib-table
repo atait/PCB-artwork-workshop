@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ITPcamp") (type "KiCad") (uri "${KIPRJMOD}/ITPcamp.pretty") (options "") (descr ""))
+)
