@@ -166,7 +166,7 @@ If precision is too low, it will look jagged. Decrease the precision value (e.g.
 
 ### Convert SVG to KiCad module (GUI version)
 Use this web app to run the svg2mod command in your browser:
-https://taitphotonlab.com/projects/svg2kicad.html
+https://taitphotonlab.com/svg2kicad.html
 
 1. Drag and drop your SVG file (.svg)
 2. Adjust precision setting (default is usually fine)
