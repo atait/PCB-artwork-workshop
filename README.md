@@ -10,8 +10,6 @@ These instructions trace the detailed procedure for the NYCR logo example. If yo
 
 Reproduce the steps with the example described here, then repeat the steps with your own graphics.
 
-This README contains the instructions for the three workflows. See the [Outline.md](Outline.md) file for the workshop outline.
-
 ## Included examples
 Look at these projects to see finished PCB artwork examples with the `svg2mod` workflow (Workflow 3). See "SVG editing" directories for source files. See ".pretty" directories for footprint files.
 - `Example-ITP-camp-card`
