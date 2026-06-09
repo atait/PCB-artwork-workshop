@@ -73,18 +73,19 @@ Single-layer import (basic resistor logo)
 SVG/PCB layers, groups, nodes
 Path operations: scale, boolean, inset/outset
 
-##### 20 min async
+##### 15 min async
 Find and download a vector image
 Edit in Inkscape — notice colors and layers
 
-##### 15 min talking
+##### 10 min talking
 KiCAD footprints + local libraries
 PCB fabrication + economics
 Plotting, zipping, ordering
 
-##### 10 min async
+##### 20 min async
 Place fancy resistor logo (from footprint library)
 Generate footprint with svg2mod
+Place footprint in KiCAD layout and iterate
 
 ##### Break between sessions
 
