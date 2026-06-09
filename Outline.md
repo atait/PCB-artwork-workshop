@@ -1,6 +1,4 @@
-### Workshop Outline
-
-#### Intro
+### 4-hour Workshop Outline
 
 #### Hour 1: Importing graphics
 ##### 10 mins talking
@@ -55,3 +53,48 @@ Order if done
 Continue working at your own pace
 Email/discord Alex for tech support
 Order when ready
+
+### 2+2 hour Workshop Outline
+2 hours lecture/making + 2 hours co-working
+
+#### Session 1: Lecture + Making (2 hours)
+
+##### 20 min talking
+Intro/objectives
+Vector graphics
+Printed circuit boards + CAD
+
+##### 15 min async
+Download KiCAD + Inkscape
+Obtain template files
+Single-layer import (basic resistor logo)
+
+##### 20 min talking
+SVG/PCB layers, groups, nodes
+Path operations: scale, boolean, inset/outset
+
+##### 20 min async
+Find and download a vector image
+Edit in Inkscape — notice colors and layers
+
+##### 15 min talking
+KiCAD footprints + local libraries
+PCB fabrication + economics
+Plotting, zipping, ordering
+
+##### 10 min async
+Place fancy resistor logo (from footprint library)
+Generate footprint with svg2mod
+
+##### Break between sessions
+
+#### Session 2: Co-Working (2 hours)
+
+Open studio — work at your own pace with support
+
+Suggested milestones:
+- 0:30–1:00 — Iterate on footprint; place in KiCAD layout
+- 1:00–1:30 — Finalize design; plot Gerbers
+- 1:30–2:00 — Order if ready, or keep refining
+
+Alex circulates for 1:1 help; optional group check-ins at the 30-min and 60-min marks.
