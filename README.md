@@ -8,7 +8,7 @@ There are three workflows:
 
 These instructions trace the detailed procedure for the NYCR logo example. If you get stuck, checkpoint files are provided. That means you can skip steps and practice the techniques one step at a time.
 
-When you repeat the procedure for your own graphics, you will not be able to skip steps.
+Reproduce the steps with the example described here, then repeat the steps with your own graphics.
 
 This README contains the instructions for the three workflows. See the [Outline.md](Outline.md) file for the workshop outline.
 
