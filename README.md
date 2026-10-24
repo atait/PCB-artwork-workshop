@@ -4,7 +4,6 @@ This workshop will walk you through creating PCB artwork using Inkscape and KiCa
 There are three workflows:
 1. Single-layer import style
 2. Multi-layer footprint style
-3. Placing a footprint from a library
 
 These instructions trace the detailed procedure for the NYCR logo example. If you get stuck, checkpoint files are provided. That means you can skip steps and practice the techniques one step at a time.
 
@@ -25,7 +24,7 @@ This example will use the NYCR logo. I found it by
 
 You can repeat this process or use the checkpoint file included in the repo:
 
-> 💾 Checkpoint: NYCR-logo-phase-0.svg
+> 💾 Checkpoint: NYCR-logo-phase-0-downloaded.svg
 ![inkscape-phase-0](images/inkscape-phase-0.png)
 
 ### To find your own SVG
@@ -38,7 +37,7 @@ Or search for "free vector art" and find sites like vecteezy.com
 
 Or create your own SVG by hand.
 
-Or use a bitmap photo (PNG, JPG) and trace it in Inkscape.
+Or use a bitmap photo (PNG, JPG) and "trace bitmap" in Inkscape.
 
 ## Layers of PCB that creates various appearances:
 
@@ -90,6 +89,7 @@ Having F.Cu on its own results in copper beneath the soldermask, which is very s
 > 💾 Checkpoint: NYCresistor-card-example1.kicad_pcb
 ![kicad-example1](images/kicad-example1.png)
 
+Question: What is the difference between `NYCR-logo-phase-0-downloaded.svg` and `NYCR-logo-phase-1.svg`?
 
 ## Workflow 2: Multi-layer footprint
 ### Pre-processing groups/layers in Inkscape
@@ -141,8 +141,6 @@ See ITPcamp example for a side-by-side workflow. Instead of multiple files (phas
 
 ![ITPcamp-pcb](images/ITPcamp-pcb.png)
 
-## Workflow 3: From footprint to gerbers
-
 ### Convert SVG to KiCad module (Terminal version)
 *It is recommended to use the GUI version below, but the terminal version is also available.*
 
@@ -173,7 +171,7 @@ https://taitphotonlab.com/apps/svg2kicad.html
 3. Convert
 4. Download the generated KiCad module (.kicad_mod)
 
-Note that svg2mod.com exists to do the same thing, but it is not currently working.
+Note that svg2mod.com exists to do the same thing, but it sends your file to their server (and is not currently working).
 
 ### Import module into KiCad footprint manager
 Edit footprint libraries: add nycr-logo.pretty
@@ -227,7 +225,23 @@ You can pick different dimensions, big or small. You can even use a circle. You 
 
 ![3d view](images/3d%20viewer.png)
 
-### Plot the gerbers
+## Iterating on the design
+
+If you want to make changes to your artwork after creating the footprint:
+
+1. Make changes in Inkscape
+2. Save the SVG file
+3. Run the svg2mod command again using the online converter.
+4. Move the new .kicad_mod file to the library folder, replacing the old one.
+5. Quit and reopen `pcbnew.app` (KiCad needs to reload the library)
+6. Add component (hotkey: `A`), find your library, and place the updated footprint
+7. 3D view (hotkey: `Opt-3`) will show you how it looks in real life.
+8. Review the 3D model and make further adjustments in Inkscape
+
+
+## Workflow 3: From footprint to ordering
+
+## Plot the gerbers
 - Go to File > Plot
 - Select these options
 - Select the output directory "NameOfProject-tapeout"
@@ -239,22 +253,8 @@ You can pick different dimensions, big or small. You can even use a circle. You 
 
 ![tapeout compress](images/tapeout%20compress.png)
 
-## Iterating on the design
-
-If you want to make changes to your artwork after creating the footprint:
-
-1. Make changes in Inkscape
-2. Save the SVG file
-3. Run the svg2mod command again. Make sure the output path is pointing to the live library:
-   ```
-   svg2mod -p 1.0 -o nycr-logo.pretty/NYCR-logo.kicad_mod nycr_logo.svg
-   ```
-4. Quit and reopen `pcbnew.app` (KiCad needs to reload the library)
-5. Add component (hotkey: `A`), find your library, and place the updated footprint
-6. 3D view (hotkey: `Opt-3`) will show you how it looks in real life.
-7. Review the 3D model and make further adjustments in Inkscape
-
 ## Instructions for ordering
+
 ### OSHPARK (United States)
 - multiples of 3
 - About $7 per board
@@ -269,9 +269,7 @@ If you want to make changes to your artwork after creating the footprint:
 8. Enjoy your new PCBs!
 
 ### JLCPCB (international - pay shipping)
-This is cheaper, faster, with more options (color, thickness, etc.). It also scales better for larger quantities (~70¢ per board @ 50 boards). Most of the cost is in tariffs and shipping, so we are going to prefer OSHPARK for prototyping.
-
-If you want to do a more advanced production run, see the slides for JLCPCB instructions, but I recommend starting with prototyping.
+This is cheaper, faster, with more options (color, thickness, etc.). It also scales better for larger quantities (~70¢ per board @ 50 boards). Most of the cost is in tariffs and shipping, so we are going to prefer OSHPARK for prototyping, depending on class size.
 
 ## After you get your board:
 It may have spiky edges or burrs on the board from the machines that cut them out. You can file these off with a metal file but make sure to have the board be wet when you are doing this as the filing will great fiberglass dust and you don't want that to go into your lungs or skin.
