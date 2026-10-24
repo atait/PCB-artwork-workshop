@@ -9,6 +9,11 @@ These instructions trace the detailed procedure for the NYCR logo example. If yo
 
 Reproduce the steps with the example described here, then repeat the steps with your own graphics.
 
+### Slides
+**[Link to slides](https://docs.google.com/presentation/d/1zV1L_Xw4yPro0tG-v6-CK8Sn02TVPhq5eudh-7Esbb4/edit?slide=id.p#slide=id.p)**
+
+[Link to order spreadsheet](https://docs.google.com/spreadsheets/d/1kogPh8-kZjdPBVyFecbTC-Yk5dQ5IPqLUJ6YryDgMXk/edit?gid=0#gid=0)
+
 ## Included examples
 Look at these projects to see finished PCB artwork examples with the `svg2mod` workflow (Workflow 3). See "SVG editing" directories for source files. See ".pretty" directories for footprint files.
 - `Example-ITP-camp-card`
